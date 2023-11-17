@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 #.vscode
 
-temp*.py
+temp.*
 clickhouse
 data
 
