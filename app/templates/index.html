@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Главная страница
+{% endblock %}
+
+{% block body %}
+  <p>
+    Dataset: <a href="https://www.kaggle.com/datasets/yutkin/corpus-of-russian-news-articles-from-lenta">https://www.kaggle.com/datasets/yutkin/corpus-of-russian-news-articles-from-lenta</a>
+  </p>
+  <div>
+    <label for="topWords">Получить топ 100 слов из датасета:</label>
+    <form method="post" action="{{ url_for('get_top_words') }}">
+      <button type="submit">Get top100 words</button>
+    </form>
+  </div>
+{% endblock %}
