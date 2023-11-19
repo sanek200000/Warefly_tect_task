@@ -7,6 +7,8 @@ __pycache__/
 temp.*
 clickhouse
 data
+get_sys_path.tmp*
+lenta-ru*
 
 # C extensions
 *.so
