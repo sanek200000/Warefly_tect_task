@@ -13,7 +13,13 @@ def index():
 
 
 @app.route("/getWords", methods=["POST"])
-def get_top_words():
+def get_top_words() -> Response:
+    """Функция делает запрос к БД, ищет 100 самых используемых слов
+
+    Returns:
+        Response: возвращает ответ с данными в формате json
+    """
+
     query = """SELECT word, count() as word_count
     FROM (
         SELECT arrayJoin(splitByChar(' ', coalesce(text, ''))) as word

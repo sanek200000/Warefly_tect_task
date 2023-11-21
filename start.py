@@ -12,7 +12,6 @@ from app.config.conf import (
 from app.handlers.conv import csv_to_json
 
 
-# def main():
 if __name__ == "__main__":
     # Чистим окно терминала
     subprocess.run(["clear"])
