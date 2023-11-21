@@ -6,7 +6,7 @@ __pycache__/
 
 temp.*
 clickhouse
-data
+clickhouse_data
 get_sys_path.tmp*
 lenta-ru*
 
