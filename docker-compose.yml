@@ -14,7 +14,7 @@ services:
       - 8123:8123
       - 9000:9000
     volumes:
-      - ./data:/var/lib/clickhouse
+      - ./clickhouse_data:/var/lib/clickhouse
     ulimits:
       nproc: 65535
       nofile:
